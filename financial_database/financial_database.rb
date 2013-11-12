@@ -1,10 +1,11 @@
-data = File.new("database.txt", "r+")
 def sum(a)
-  puts a.split(" ").map{|x| x.to_i}.inject{|x,y| x+y}
+  puts a.map{|x| x.to_i}.inject{|x,y| x+y}
 end
 while true
   puts "Money to add:"
   m = gets.chomp
-  data.syswrite(m + " ")
-  puts sum(data.readlines.join)
+  data = File.new("database.txt", "r+")
+  data.write(m + " ")
+  puts sum(data.readlines)
+  data.close
 end
