@@ -5,4 +5,3 @@ while true
   break if i == 100
   i += 1
 end
-

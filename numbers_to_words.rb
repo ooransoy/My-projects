@@ -1,0 +1,5 @@
+require 'rubygems'
+require 'numbers_and_words'
+puts "Number:"
+num = gets.chomp
+puts num.in_words
