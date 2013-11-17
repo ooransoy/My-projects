@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @gun.name %>
+</p>
+
+<p>
+  <strong>Auto:</strong>
+  <%= @gun.auto %>
+</p>
+
+<p>
+  <strong>Shots per second:</strong>
+  <%= @gun.shots_per_second %>
+</p>
+
+<p>
+  <strong>Scope:</strong>
+  <%= @gun.scope %>
+</p>
+
+<p>
+  <strong>Clip size:</strong>
+  <%= @gun.clip_size %>
+</p>
+
+<p>
+  <strong>Clip type:</strong>
+  <%= @gun.clip_type %>
+</p>
+
+<p>
+  <strong>Damage:</strong>
+  <%= @gun.damage %>
+</p>
+
+<p>
+  <strong>Bullet speed:</strong>
+  <%= @gun.bullet_speed %>
+</p>
+
+<p>
+  <strong>Reload speed:</strong>
+  <%= @gun.reload_speed %>
+</p>
+
+<p>
+  <strong>Bullet diameter:</strong>
+  <%= @gun.bullet_diameter %>
+</p>
+
+<p>
+  <strong>Number of barrels:</strong>
+  <%= @gun.number_of_barrels %>
+</p>
+
+<p>
+  <strong>Spread:</strong>
+  <%= @gun.spread %>
+</p>
+
+<p>
+  <strong>Healing bullets:</strong>
+  <%= @gun.healing_bullets %>
+</p>
+
+<p>
+  <strong>Explosion radius:</strong>
+  <%= @gun.explosion_radius %>
+</p>
+
+<p>
+  <strong>Extras:</strong>
+  <%= @gun.extras %>
+</p>
+
+<%= link_to 'Edit', edit_gun_path(@gun) %> |
+<%= link_to 'Back', guns_path %>

@@ -1,0 +1,55 @@
+<h1>Listing guns</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Auto</th>
+      <th>Shots per second</th>
+      <th>Scope</th>
+      <th>Clip size</th>
+      <th>Clip type</th>
+      <th>Damage</th>
+      <th>Bullet speed</th>
+      <th>Reload speed</th>
+      <th>Bullet diameter</th>
+      <th>Number of barrels</th>
+      <th>Spread</th>
+      <th>Healing bullets</th>
+      <th>Explosion radius</th>
+      <th>Extras</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @guns.each do |gun| %>
+      <tr>
+        <td><%= gun.name %></td>
+        <td><%= gun.auto %></td>
+        <td><%= gun.shots_per_second %></td>
+        <td><%= gun.scope %></td>
+        <td><%= gun.clip_size %></td>
+        <td><%= gun.clip_type %></td>
+        <td><%= gun.damage %></td>
+        <td><%= gun.bullet_speed %></td>
+        <td><%= gun.reload_speed %></td>
+        <td><%= gun.bullet_diameter %></td>
+        <td><%= gun.number_of_barrels %></td>
+        <td><%= gun.spread %></td>
+        <td><%= gun.healing_bullets %></td>
+        <td><%= gun.explosion_radius %></td>
+        <td><%= gun.extras %></td>
+        <td><%= link_to 'Show', gun %></td>
+        <td><%= link_to 'Edit', edit_gun_path(gun) %></td>
+        <td><%= link_to 'Destroy', gun, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Gun', new_gun_path %>

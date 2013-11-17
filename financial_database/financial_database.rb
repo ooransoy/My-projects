@@ -1,5 +1,5 @@
 def sum(a)
-  puts a.map(&:to_i).map{|x| x.to_i}.inject{|x,y| x+y}
+  puts a.map{|x| x.to_i}.inject{|x,y| x+y}
 end
 while true
   puts "Money to add:"

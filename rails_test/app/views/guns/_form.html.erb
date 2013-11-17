@@ -1,0 +1,77 @@
+<%= form_for(@gun) do |f| %>
+  <% if @gun.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gun.errors.count, "error") %> prohibited this gun from being saved:</h2>
+
+      <ul>
+      <% @gun.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :auto %><br>
+    <%= f.check_box :auto %>
+  </div>
+  <div class="field">
+    <%= f.label :shots_per_second %><br>
+    <%= f.text_field :shots_per_second %>
+  </div>
+  <div class="field">
+    <%= f.label :scope %><br>
+    <%= f.check_box :scope %>
+  </div>
+  <div class="field">
+    <%= f.label :clip_size %><br>
+    <%= f.number_field :clip_size %>
+  </div>
+  <div class="field">
+    <%= f.label :clip_type %><br>
+    <%= f.text_field :clip_type %>
+  </div>
+  <div class="field">
+    <%= f.label :damage %><br>
+    <%= f.text_field :damage %>
+  </div>
+  <div class="field">
+    <%= f.label :bullet_speed %><br>
+    <%= f.text_field :bullet_speed %>
+  </div>
+  <div class="field">
+    <%= f.label :reload_speed %><br>
+    <%= f.text_field :reload_speed %>
+  </div>
+  <div class="field">
+    <%= f.label :bullet_diameter %><br>
+    <%= f.text_field :bullet_diameter %>
+  </div>
+  <div class="field">
+    <%= f.label :number_of_barrels %><br>
+    <%= f.number_field :number_of_barrels %>
+  </div>
+  <div class="field">
+    <%= f.label :spread %><br>
+    <%= f.check_box :spread %>
+  </div>
+  <div class="field">
+    <%= f.label :healing_bullets %><br>
+    <%= f.check_box :healing_bullets %>
+  </div>
+  <div class="field">
+    <%= f.label :explosion_radius %><br>
+    <%= f.text_field :explosion_radius %>
+  </div>
+  <div class="field">
+    <%= f.label :extras %><br>
+    <%= f.text_area :extras %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

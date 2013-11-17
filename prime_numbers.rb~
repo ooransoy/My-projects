@@ -1,0 +1,6 @@
+require 'prime'
+i = 2
+while true
+  puts i if Prime.prime?(i)
+  i += 1
+end

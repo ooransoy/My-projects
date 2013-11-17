@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  auto: false
+  shots_per_second: 9.99
+  scope: false
+  clip_size: 1
+  clip_type: MyString
+  damage: 9.99
+  bullet_speed: MyString
+  reload_speed: MyString
+  bullet_diameter: MyString
+  number_of_barrels: 1
+  spread: false
+  healing_bullets: false
+  explosion_radius: MyString
+  extras: MyText
+
+two:
+  name: MyString
+  auto: false
+  shots_per_second: 9.99
+  scope: false
+  clip_size: 1
+  clip_type: MyString
+  damage: 9.99
+  bullet_speed: MyString
+  reload_speed: MyString
+  bullet_diameter: MyString
+  number_of_barrels: 1
+  spread: false
+  healing_bullets: false
+  explosion_radius: MyString
+  extras: MyText
