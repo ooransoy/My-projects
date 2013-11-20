@@ -7,9 +7,9 @@
 		<h1>Turn Firebug on! (Go to the console tab, that's where the action happens. :)</h1>
 		<script type="text/javascript">
 			var leanboo = confirm("RFT(ready for testing)?"); // Co1,Cr1
-			console.log(leanboo)
+			console.log(leanboo);
 			var text = prompt("What are your thoughts of this Area?");
-			console.log(text)
+			console.log(text);
 
 			function crashCourseTesterIdGenerator(min, max) {
 				console.log(Math.floor((Math.random() * max) + min));
@@ -19,9 +19,31 @@
 			var testermax = prompt("Id generating max:");
 			console.log(testermax);
 			var id = crashCourseTesterIdGenerator(testermin, testermax);
+
+			function isPrime(num){ // Co1;Cr3
+				for (var i = 2; i <= 11; i++) {
+					if (num % i) {
+						return false;
+					}
+				}
+			}
 			
-			trueorfalse = [] // Co1;Cr3
-			
+			var primeTests = prompt("Prime number checking test number:");
+			console.log(primeTests);
+
+			function primeTestIfHelper(n){
+				if (isPrime(n) == false){
+					return "Not prime."
+				} else if (isPrime(n) == null) {
+					return ""
+				}
+			}
+		</script>
+		<input name="ccucumadd" id="ccucumadd" type="number">Calcucumber addition 1st num:</input>
+		<input name="ccucumadd2" id="ccucumadd2" type="number">Calcucumber addition 2nd num:</input>
+		<script onclick="" type="text/javascript">
+			var cca = document.getElementById('ccucumadd').value + document.getElementById('ccucumadd2')
+			alert(cca)
 		</script>
 	</body>
 </html>
