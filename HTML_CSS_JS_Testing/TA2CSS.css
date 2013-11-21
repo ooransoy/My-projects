@@ -1,0 +1,17 @@
+#ghyperlink:link {
+	color: #FF4500;
+	font-weight: lighter;
+	text-decoration: none;
+}
+#ghyperlink:visited {
+	text-decoration: overline;
+	color: #FF00FF;
+}
+#ghyperlink:hover {
+	font-family: sans-serif;
+	color: #FF0000;
+}
+#colors {
+	background-color: #CC00FF;
+	font-family: sans-serif;
+}
