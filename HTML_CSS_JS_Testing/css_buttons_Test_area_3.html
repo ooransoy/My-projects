@@ -1,0 +1,58 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Buttons</title>
+		<style type="text/css">
+			h1 {
+				font-family: Verdana;
+			} #buttonNormal {
+				width: 100px;
+				height: 50px;
+				border: 4px solid black;
+				border-radius: 10px;
+				padding: 5px;
+				text-align: center;
+				background-color: #D06819;
+			} #buttonNormalText {
+				vertical-align: middle;
+				display: inline-block;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				color: blue;
+			} #shadowButton {
+				width: 100px;
+				height: 50px;
+				box-shadow: 10px 10px 5px;
+				background-color: white;
+				text-align: center;
+			} #buttonShadowText {
+				color: lightgrey;
+				font-family: Arial;
+			} #bulletButton {
+				width: 100px;
+				height: 50px;
+				background-color: lightblue;
+				border: 4px solid black;
+				border-top-left-radius: 50%;
+				border-bottom-left-radius: 50%;
+			} #toggleableButton {
+				width: 100px;
+				height: 50px;
+				border: 4px dashed black;
+				border-top-left-radius: 50%;
+				background-color: magenta;
+			}
+		</style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="CBTA3JS.js"></script>
+	</head>
+	<body>
+		<h1 id="normalButtonDemo">Normal Button:</h1>
+		<div id="buttonNormal"><span id="buttonNormalText">Hi!</span></div>
+		<h1>Shadow Button:</h1>
+		<div id="shadowButton"><span id="buttonShadowText">shadow</span></div>
+		<h1>Bullet Button:</h1>
+		<div id="bulletButton"></div>
+		<h1>Toogleable Button</h1>
+		<div id="toggleableButton"></div>
+	</body>
+</html>

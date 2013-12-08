@@ -1,4 +1,4 @@
-require 'account_class'
+require 'account_class.rb'
 require 'json'
 #require 'account_helper_module'
 
