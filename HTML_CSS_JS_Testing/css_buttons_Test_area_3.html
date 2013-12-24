@@ -11,42 +11,62 @@
 				border: 4px solid black;
 				border-radius: 10px;
 				padding: 5px;
-				text-align: center;
-				background-color: #D06819;
-			} #buttonNormalText {
-				vertical-align: middle;
-				display: inline-block;
-				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-				color: blue;
-			} #shadowButton {
-				width: 100px;
-				height: 50px;
-				box-shadow: 10px 10px 5px;
-				background-color: white;
-				text-align: center;
-			} #buttonShadowText {
-				color: lightgrey;
-				font-family: Arial;
-			} #bulletButton {
-				width: 100px;
-				height: 50px;
-				background-color: lightblue;
-				border: 4px solid black;
-				border-top-left-radius: 50%;
-				border-bottom-left-radius: 50%;
-			} #toggleableButton {
-				width: 100px;
+ 				width: 100px;
 				height: 50px;
 				border: 4px dashed black;
 				border-top-left-radius: 50%;
 				background-color: magenta;
+			} #colorChangerButton {
+				width: 100px;
+				height: 50px;
+				border: 4px dashed black;
+				border-radius: 5px;
+				box-shadow: 0 0 50px;
+			} .red {
+				color: red;
+				background-color: green;
+			} .green {
+				color: green;
+				background-color: blue;
+			} .blue {
+				color: blue;
+				background-color: red;
+			} #lampButton {
+				width: 100px;
+				height: 50px;
+				background-color: navy;
+				border-radius: 10px;
+			} .upTriangle {
+				width: 0;
+				height: 0;
+				border-bottom: 50px solid #00FF00;
+				border-left: 50px solid transparent;
+				border-right: 50px solid transparent;
+			} .pentagon {
+    			position: relative;
+    			width: 54px;
+    			border-width: 50px 18px 0;
+    			border-style: solid;
+    			border-color: red transparent;
+			} .pentagon:before {
+    			content: "";
+    			position: absolute;
+    			height: 0;
+    			width: 0;
+    			top: -85px;
+    			left: -18px;
+    			border-width: 0 45px 35px;
+    			border-style: solid;
+    			border-color: transparent transparent red;
+			} #pentaButton:hover:before {
+				border-color: orange;
 			}
 		</style>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script type="text/javascript" src="CBTA3JS.js"></script>
 	</head>
 	<body>
-		<h1 id="normalButtonDemo">Normal Button:</h1>
+		<h1>Normal Button:</h1>
 		<div id="buttonNormal"><span id="buttonNormalText">Hi!</span></div>
 		<h1>Shadow Button:</h1>
 		<div id="shadowButton"><span id="buttonShadowText">shadow</span></div>
@@ -54,5 +74,12 @@
 		<div id="bulletButton"></div>
 		<h1>Toogleable Button</h1>
 		<div id="toggleableButton"></div>
+		<h1>Color Changer</h1>
+		<div id="colorChangerButton" class="red"></div>
+		<a href="http://jsfiddle.net/Dg7L4/">FIDDLE</a>
+		<h1>Lamp</h1>
+		<div id="lampButton"><div class="upTriangle" id="lampInside"></div></div>
+		<h1>PentaButton</h1>
+		<div id="pentaButton" class="pentagon"></div>
 	</body>
 </html>
